@@ -61,7 +61,8 @@ RUN apt-get install -y \
         libreadline6-dev \
         libmagick++5 \
         libmagick++-dev \
-        imagemagick
+        imagemagick \
+        libqt5websockets5-dev
 
 # Create devel user...
 RUN useradd -m -d /home/devel -u 1000 -U -G users,tty -s /bin/bash devel
