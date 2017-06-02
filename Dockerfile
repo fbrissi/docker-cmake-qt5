@@ -63,7 +63,7 @@ RUN apt-get install -y \
         libmagick++-dev \
         imagemagick \
         libqt5websockets5-dev
-
+        
 # Create devel user...
 RUN useradd -m -d /home/devel -u 1000 -U -G users,tty -s /bin/bash devel
 USER devel
