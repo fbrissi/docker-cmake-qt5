@@ -48,7 +48,8 @@ RUN apt-get install -y \
         qtdeclarative5-qtquick2-plugin \
         qtdeclarative5-window-plugin \
         qttools5-dev-tools \
-        qttools5-dev
+        qttools5-dev \
+        libqt5websockets5-dev
 
 RUN apt-get install -y \
         libncurses5 \
@@ -61,8 +62,7 @@ RUN apt-get install -y \
         libreadline6-dev \
         libmagick++5 \
         libmagick++-dev \
-        imagemagick \
-        libqt5websockets5-dev
+        imagemagick
         
 # Create devel user...
 RUN useradd -m -d /home/devel -u 1000 -U -G users,tty -s /bin/bash devel
